@@ -2,13 +2,19 @@ package com.devyani.userSampleApi.models;
 
 import java.util.Objects;
 
-public  class User {
-    private final int id;
-    private  String firstName;
+public class User {
+    private int id;
+    private String firstName;
     private String lastName;
     private String phoneNumber;
     private String email;
 
+    public User() {
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public User(int id, String firstName, String lastName, String phoneNumber, String email) {
         this.id = id;
@@ -17,6 +23,7 @@ public  class User {
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
 
     public int getId() {
         return id;
@@ -52,23 +59,6 @@ public  class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id &&
-                Objects.equals(firstName, user.firstName) &&
-                Objects.equals(lastName, user.lastName) &&
-                Objects.equals(phoneNumber, user.phoneNumber) &&
-                Objects.equals(email, user.email);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstName, lastName, phoneNumber, email);
     }
 
     @Override
