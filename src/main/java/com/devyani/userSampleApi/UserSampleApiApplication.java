@@ -18,18 +18,21 @@ public class UserSampleApiApplication {
 		ApplicationContext app = SpringApplication.run(UserSampleApiApplication.class, args);
 		//ReadCSV readCSV = new ReadCSV();
 		//readCSV.readingCSVFile();
-	UserServices userServices = app.getBean(UserServices.class);
+//	UserServices userServices = app.getBean(UserServices.class);
 //
 //		System.out.println(userServices.getUserById(3));
-		User newUser = new User();
-		newUser.setId(6);
-		newUser.setFirstName("ram");
-		newUser.setLastName("ravan");
-		newUser.setPhoneNumber("324411");
-		newUser.setEmail("asdasd@gmail.com");
-		userServices.addUser(newUser);
-
-		userServices.getAllUsers().forEach(user -> System.out.println(user));
+//		User newUser = new User();
+//		newUser.setId(2);
+//		newUser.setFirstName("dev");
+//		newUser.setLastName("peeyush");
+//		newUser.setPhoneNumber("324411");
+//		newUser.setEmail("orchid.plant@gmail.com");
+//		//userServices.addUser(newUser);
+//		userServices.updateUserById(4,newUser);
+//
+//
+	//	userServices.deleteById(5);
+	//	userServices.getAllUsers().forEach(user -> System.out.println(user));
 
 	}
 
