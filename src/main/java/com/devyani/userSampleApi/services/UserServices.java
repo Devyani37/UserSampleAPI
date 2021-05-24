@@ -55,7 +55,7 @@ public class UserServices {
         }
 
         if(!isUserExist){
-            throw new InvalidRequestException("User with this id is not present");
+            throw new IllegalArgumentException("User with this id is not present");
         }
 
         existingUser.setFirstName(updatedUserData.getFirstName());

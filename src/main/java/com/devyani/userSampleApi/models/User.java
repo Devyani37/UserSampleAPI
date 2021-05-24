@@ -1,10 +1,18 @@
 package com.devyani.userSampleApi.models;
 
-import java.util.Objects;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 public class User {
     private int id;
+    @NotBlank(message = "FirstName must not be blank.")
+    @NotEmpty(message = "FirstName must not be empty.")
+    @Size(min = 2, max = 32, message = "FirstName must be between 2 and 32 characters long")
     private String firstName;
+    @NotBlank(message = "LastName must not be blank.")
+    @NotEmpty(message = "LastName must not be empty.")
+    @Size(min = 2, max = 32, message = "LastName must be between 2 and 32 characters long")
     private String lastName;
     private String phoneNumber;
     private String email;
