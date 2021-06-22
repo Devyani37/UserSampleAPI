@@ -1,4 +1,4 @@
-package com.devyani.userSampleApi.services;
+package com.devyani.userSampleApi.repositories;
 
 import com.devyani.userSampleApi.models.User;
 import org.springframework.stereotype.Service;

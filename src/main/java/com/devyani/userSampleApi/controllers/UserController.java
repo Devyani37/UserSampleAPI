@@ -1,6 +1,7 @@
 package com.devyani.userSampleApi.controllers;
 
 import com.devyani.userSampleApi.models.User;
+import com.devyani.userSampleApi.repositories.UserRepository;
 import com.devyani.userSampleApi.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -11,8 +12,10 @@ import javax.validation.constraints.Min;
 import java.util.List;
 
 @RestController
+@RequestMapping(value = "/app")
 @Validated
 public class UserController {
+
 
     @Autowired
     UserServices userServices;

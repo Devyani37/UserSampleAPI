@@ -1,17 +1,12 @@
 package com.devyani.userSampleApi;
 
-import com.devyani.userSampleApi.models.User;
-import com.devyani.userSampleApi.services.ReadCSV;
-import com.devyani.userSampleApi.services.UserServices;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableSwagger2
 public class UserSampleApiApplication {
 
 	public static void main(String[] args) {
